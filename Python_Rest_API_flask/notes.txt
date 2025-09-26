@@ -1,0 +1,46 @@
+Overview
+This note summarizes the purpose and behavior of each CRUD operation in a Flask REST API using SQLAlchemy ORM. Use this as a quick reference for your future projects.
+1.	Home Route (/)
+ 
+•	Purpose: Simple welcome message to confirm the API is running.
+•	Method: GET
+•	Response: JSON message (e.g., { "message": "Welcome to the Travel API!" })
+2.	Read All Destinations (/destinations)
+ 
+•	Purpose: Retrieve a list of all destinations in the database.
+•	Method: GET
+•	Response: JSON array of destination objects.
+•	Typical Use: Display all records to the user or client app.
+3.	Read Single Destination (/destinations/<id>)
+ 
+•	Purpose: Retrieve details for a specific destination by its ID.
+•	Method: GET
+•	Response: JSON object for the destination, or error message if not found.
+•	Typical Use: View details for one record.
+4.	Create Destination (/destinations)
+ 
+•	Purpose: Add a new destination to the database.
+•	Method: POST
+•	Request Body: JSON with keys: destination, country, rating.
+•	Response: JSON of the newly created destination and HTTP status 201 (Created).
+•	Typical Use: Add new data from a form or client app.
+5.	Update Destination (/destinations/<id>)
+ 
+•	Purpose: Update an existing destination's details.
+•	Method: PUT
+•	Request Body: JSON with any of the fields to update (destination, country, rating).
+•	Response: JSON of the updated destination, or error if not found.
+•	Typical Use: Edit or correct existing data.
+6.	Delete Destination (/destinations/<id>)
+ 
+•	Purpose: Remove a destination from the database.
+•	Method: DELETE
+•	Response: JSON message confirming deletion, or error if not found.
+•	Typical Use: Remove unwanted or obsolete data.
+General Notes
+•	Error Handling: If a destination is not found (for GET, PUT, DELETE), the API returns a JSON error message and HTTP 404 status.
+•	Data Format: All data sent and received is in JSON format.
+•	Database: Uses SQLite for storage via SQLAlchemy ORM.
+•	Model: Each destination has id, destination, country, and rating fields.
+Tip:
+Always test your endpoints with tools like Postman or curl to ensure they work as expected before deploying your API.
