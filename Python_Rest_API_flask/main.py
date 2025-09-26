@@ -55,7 +55,7 @@ def get_destinations():
 def get_destination(destination_id):
     destination=Destination.query.get(destination_id)
     if destination:
-        return jsonify(destination.to_dict)
+        return jsonify(destination.to_dict())
     else:
         return jsonify({"error":"Destination not found"}), 404
     
