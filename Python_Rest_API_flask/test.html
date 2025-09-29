@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Add Destination</h2>
+    <button id="send">Send JSON POST</button>
+
+    <script>
+      document.getElementById("send").addEventListener("click", () => {
+        // JSON payload matching your Flask model
+        const jsonData = {
+          destination: "Zanzibar",
+          country: "Tanzania",
+          rating: 4.34
+        };
+
+        fetch("http://127.0.0.1:5000/destinations/add", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(jsonData)
+        })
+          .then(res => res.json())
+          .then(data => console.log(" Server response:", data))
+          .catch(err => console.error("Error:", err));
+      });
+    </script>
+  </body>
+</html>

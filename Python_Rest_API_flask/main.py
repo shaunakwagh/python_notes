@@ -60,7 +60,7 @@ def get_destination(destination_id):
         return jsonify({"error":"Destination not found"}), 404
     
 #POST
-@app.route("/destinations", methods=["POST"])
+@app.route("/destinations/add", methods=["POST"])
 def add_destinations():
     data = request.get_json()
 
