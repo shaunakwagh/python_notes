@@ -1,0 +1,14 @@
+from enum import IntFlag, auto
+
+
+class Color(IntFlag):
+    RED = auto()
+    GREEN = auto()
+    BLUE = auto()
+    YELLOW = auto()
+
+# Note, values are separated by a whitespace.
+print(~Color.YELLOW, end=" ")
+print(Color.GREEN | Color.RED,end=" ")
+new_color = Color.RED + 1
+print(new_color ^ Color.GREEN, end="")
