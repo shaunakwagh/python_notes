@@ -1,0 +1,25 @@
+# utils.py
+def add(a, b):
+    return a + b
+
+print(1, end="")
+
+if __name__ == "__main__":
+    print(9, end="")
+    result = add(2, 3)
+    print(result, end="")
+
+# app.py
+import utils
+print(7, end="")
+
+
+"""
+This will print: 17 
+
+The import statement runs the code in utils.py, which prints 1.
+
+import a python file runs all the top-level code in that file.
+
+
+"""
