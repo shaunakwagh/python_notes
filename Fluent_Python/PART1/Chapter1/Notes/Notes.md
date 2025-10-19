@@ -7,4 +7,17 @@ Magic method is slang for Special Methods
 
 "Dunder" is a shortcut for "double underscore before and after."
 
+
+Special methods are meant to be called by the python interpreter, and not by you. 
+
+
+
+
 ## A Pythonic Card Deck
+
+This code demonstrates of implementing the two special methods, __getitem__ and __len__
+
+## Vector class
+
+This vector class implements special methods __repr__, __abs__, __add__, __mull__
+ 
