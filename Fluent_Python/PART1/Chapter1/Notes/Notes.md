@@ -1,4 +1,5 @@
-Python Data Model
+# Chapter 1: The Python Data Model
+
 
 - **Python Data Model**: A framework that defines how objects behave in Python. It consists of a set of special methods (also called “dunder” or “magic” methods) that allow objects to integrate seamlessly with Python’s built-in features like iteration, operator overloading, and attribute access.
 
