@@ -20,16 +20,18 @@ You can see Tuple used as Record.
 The Python interpreter and standard library make extensive use of tuples as immuta‐
 ble lists, and so should you. This brings two key benefits:
 
-Clarity
+Clarity:
 
-    When you see a tuple in code, you know its length will never change.
+When you see a tuple in code, you know its length will never change.
 
-Performance
+Performance:
 
-    A tuple uses less memory than a list of the same length, and it allows Python to do some optimizations.
+A tuple uses less memory than a list of the same length, and it allows Python to do some optimizations.
 
 
 # Comparing Tuple and List Methods
 
 ![alt text](Table2-1-1.png)
 ![alt text](Table2-1-2.png)
+
+
