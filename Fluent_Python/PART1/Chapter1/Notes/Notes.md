@@ -25,4 +25,6 @@ This vector class implements special methods __repr__, __abs__, __add__, __mull_
  
  ![alt text](Vector.png)
 
-x
+## Special Methods
+![alt text](SpecialMethods.png)
+
