@@ -58,17 +58,17 @@ S[a:b:c] can be used to specify a stride or step c, causing the resulting slice 
 
 
 '''
->>> s='bicycle'
+s='bicycle'
 
->>> s[::3]
+s[::3]
 
 'bye'
 
->>> s[::-1]
+s[::-1]
 
 'elcycib'
 
->>> s[::-2]
+ s[::-2]
 
 'eccb'
 
