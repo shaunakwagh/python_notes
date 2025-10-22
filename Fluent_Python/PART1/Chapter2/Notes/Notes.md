@@ -35,3 +35,42 @@ A tuple uses less memory than a list of the same length, and it allows Python to
 ![alt text](Table2-1-2.png)
 
 
+
+# Using * to grab excess items
+
+
+a,b *rest = range(5)
+
+this will print out 
+
+ a, b, rest
+
+(0,1,[2,3,4])
+
+# Nested Upacking
+
+You can do nested upacking as long has it has the same structure
+
+You can see the the Nested Unpacking code.
+
+# Slice Objects
+S[a:b:c] can be used to specify a stride or step c, causing the resulting slice to skip items. The stride allso be negative, returning the items in reverse
+
+
+'''
+>>> s='bicycle'
+
+>>> s[::3]
+
+'bye'
+
+>>> s[::-1]
+
+'elcycib'
+
+>>> s[::-2]
+
+'eccb'
+
+
+'''
