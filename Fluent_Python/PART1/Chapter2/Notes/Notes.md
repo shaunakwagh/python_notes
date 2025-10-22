@@ -57,7 +57,8 @@ You can see the the Nested Unpacking code.
 S[a:b:c] can be used to specify a stride or step c, causing the resulting slice to skip items. The stride allso be negative, returning the items in reverse
 
 
-'''python
+```python
+
 s='bicycle'
 
 s[::3]
@@ -72,5 +73,4 @@ s[::-1]
 
 'eccb'
 
-
-'''
+```
